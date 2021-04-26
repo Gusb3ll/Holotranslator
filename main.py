@@ -4,14 +4,29 @@ import wave
 import speech_recognition as sr
 from googletrans import Translator
 
-print("----- Holotranslator Ver1.1 by Gusbell -----")
+print("")
+print("------------- Holotranslator v1.0 by Gusbell -------------")
+print("")
+print("")
+
+id = input("Your device index id (default:1) : ")
+channels = input("Your audio channels (default:2) : ")
+time = input("Time between each translation : ")
+
+if id == "":
+    id = 1
+if channels == "":
+    channels = 2
+if time == "":
+    time = 10
 
 def rec():
     FORMAT = pyaudio.paInt16
-    CHANNELS = 2
+    CHANNELS = int(channels)
     RATE = 44100
+    INDEX = int(id)
     CHUNK = 1024
-    RECORD_SECONDS = 5
+    RECORD_SECONDS = float(time)
     WAVE_OUTPUT_FILENAME = "output.wav"
 
     p = pyaudio.PyAudio()
@@ -19,7 +34,7 @@ def rec():
                     channels=CHANNELS,
                     rate=RATE,
                     input=True,
-                    input_device_index=1,
+                    input_device_index=INDEX,
                     frames_per_buffer=CHUNK)
 
     print("")
@@ -47,6 +62,7 @@ translator = Translator()
 
 def trans():
     with sr.WavFile("./output.wav") as source:
+        r.adjust_for_ambient_noise(source)
         audio = r.record(source)
         try:
             output = r.recognize_google(audio, language="ja-JP")
