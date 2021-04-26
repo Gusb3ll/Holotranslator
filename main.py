@@ -12,7 +12,7 @@ print("")
 
 id = input("Your device index id (default:1) : ")
 channels = input("Your audio channels (default:2) : ")
-time = input("Time between each translation : ")
+time = input("Time between each translation (default:10s) : ")
 
 if id == "":
     id = 1
