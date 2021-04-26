@@ -1,6 +1,7 @@
 import os
 import pyaudio
 import wave
+import ctypes
 import speech_recognition as sr
 from googletrans import Translator
 
@@ -27,7 +28,7 @@ def rec():
     INDEX = int(id)
     CHUNK = 1024
     RECORD_SECONDS = float(time)
-    WAVE_OUTPUT_FILENAME = "output.wav"
+    WAVE_OUTPUT_FILENAME = "holo-output.wav"
 
     p = pyaudio.PyAudio()
     stream = p.open(format=FORMAT,
@@ -57,11 +58,14 @@ def rec():
     wf.writeframes(b''.join(frames))
     wf.close()
 
+def sethidden():
+    ctypes.windll.kernel32.SetFileAttributesW("./holo-output.wav", 2)
+
 r = sr.Recognizer()
 translator = Translator()
 
 def trans():
-    with sr.WavFile("./output.wav") as source:
+    with sr.WavFile("./holo-output.wav") as source:
         r.adjust_for_ambient_noise(source)
         audio = r.record(source)
         try:
@@ -76,8 +80,9 @@ def trans():
 
 def run():
     rec()
+    sethidden()
     trans()
-    os.remove("output.wav")
+    os.remove("holo-output.wav")
 
 while True:
     run()
