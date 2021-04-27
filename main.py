@@ -6,7 +6,19 @@ import speech_recognition as sr
 from googletrans import Translator
 
 print("")
-print("------------- Holotranslator v1.0 by Gusbell -------------")
+choose = input("Do you want to list your SteroMix index id? (yes, no) : ")
+
+if choose == "yes" or choose == "y":
+    p = pyaudio.PyAudio()
+    print("")
+    for i in range(p.get_device_count()):
+        dev = p.get_device_info_by_index(i)
+        if (dev['name'][:10] == 'Stereo Mix'):
+            dev_index = dev['index']
+            print('SteroMix_index', dev_index)
+
+print("")
+print("------------------ Holotranslator v1.0 by Gusbell ------------------")
 print("")
 print("")
 
@@ -14,6 +26,10 @@ id = input("Your device index id (default:1) : ")
 channels = input("Your audio channels (default:2) : ")
 time = input("Time between each translation (default:10s) : ")
 
+check = os.path.isfile("holo-output.wav")
+
+if check == True:
+    os.remove("holo-output.wav")
 if id == "":
     id = 1
 if channels == "":
@@ -37,10 +53,10 @@ def rec():
                     input=True,
                     input_device_index=INDEX,
                     frames_per_buffer=CHUNK)
-
-    print("")
-    print("")
     
+    print("")
+    print("")
+
     frames = []
 
     for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
