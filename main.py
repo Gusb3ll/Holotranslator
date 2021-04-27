@@ -31,9 +31,9 @@ print("------------------ Holotranslator v1.0 by Gusbell ------------------")
 print("")
 print("")
 
-id = input("Your device index id (default:1) : ")
-channels = input("Your audio channels (default:2) : ")
-time = input("Time between each translation (default:10s) : ")
+id = input("Your device index id (default : 1) : ")
+channels = input("Your audio channels (default : 2) : ")
+time = input("Time between each translation (default : 10s) : ")
 
 check = os.path.isfile("holo-output.wav")
 
