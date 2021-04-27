@@ -15,9 +15,9 @@ if choose == "yes" or choose == "y":
     p = pyaudio.PyAudio()
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
-        if (dev['name'][:10] == "StereoMix"):
+        if (dev['name'][:10] == "Stereo Mix"):
             dev_index = dev['index']
-            print(dev_index, " : " + "Stero Mix")
+            print(dev_index, " : " + "Stereo Mix")
 elif choose == "all" or choose == "a":
     p = pyaudio.PyAudio()
     for i in range(p.get_device_count()):
