@@ -4,7 +4,7 @@ Usage :
         
 3. Input your first SteroMix index id into the console when asked to
         
-4. Adjust the channels of your input device (SteroMix default is 2)
+4. Adjust the channels of your input device (StereoMix default is 2)
         
 5. Adjust the time between each translation and you're good to go!
 
