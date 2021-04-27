@@ -12,10 +12,10 @@ Note : If your "StudioMix" doesn't pick up any sound, try to set the default dev
 
 If the application doesn't display the japanese character correctly please follow these steps :
         
-        1.Open the Control Panel
+1. Open the Control Panel
         
-        2.Click Region and Language
+2. Click Region and Language
         
-        3.On the Administrative tab, under Language for non-Unicode programs, click "change system locale..."
+3. On the Administrative tab, under Language for non-Unicode programs, click "change system locale..."
         
-        4.Set the Current system locale as "Japanese(Japan)"
+4. Set the Current system locale as "Japanese(Japan)"
