@@ -6,11 +6,13 @@ import speech_recognition as sr
 from googletrans import Translator
 
 print("")
+print("")
 choose = input("Do you want to list your SteroMix index id? (yes, no, all) : ")
+print("")
+print("")
 
 if choose == "yes" or choose == "y":
     p = pyaudio.PyAudio()
-    print("")
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
         if (dev['name'][:10] == 'Stereo Mix'):
@@ -18,12 +20,12 @@ if choose == "yes" or choose == "y":
             print('SteroMix_index' + " : ", dev_index)
 elif choose == "all" or choose == "a":
     p = pyaudio.PyAudio()
-    print("")
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
         dev_index = dev['index']
         print(dev['name'] + " : ", dev_index)
 
+print("")
 print("")
 print("------------------ Holotranslator v1.0 by Gusbell ------------------")
 print("")
