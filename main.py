@@ -18,15 +18,17 @@ if choose == "yes" or choose == "y":
         if (dev['name'][:10] == "Stereo Mix"):
             dev_index = dev['index']
             print(dev_index, " : " + "Stereo Mix")
+    print("")
+    print("")
 elif choose == "all" or choose == "a":
     p = pyaudio.PyAudio()
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
         dev_index = dev['index']
         print(dev_index, " : " + dev['name'])
+    print("")
+    print("")
 
-print("")
-print("")
 print("------------------ Holotranslator v1.0 by Gusbell ------------------")
 print("")
 print("")
