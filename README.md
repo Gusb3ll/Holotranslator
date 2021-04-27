@@ -11,6 +11,7 @@ Installation :
 5. Adjust the time between each translation and you're good to go!
 
 Note1 : If your "StudioMix" doesn't pick up any sound, try to set the default device to SteroMix and its output to speaker, then plug your headphone jack into it
+
 Note2 : PyAudio doesn't seem to be working with Linux, waiting for the dev to fix them then I can re-relese the linux version of the translator
 
 If the application doesn't display the japanese character correctly please follow these steps :
