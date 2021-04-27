@@ -1,6 +1,6 @@
 Usage :
         
-1. Run "v1.exe" and type "yes" into the console to display your SteroMix index id (Recommend for first time user), or "all" if you want to list all device and it's index id
+1. Run "v1.exe" and type "yes" into the console to display your StereoMix index id (Recommend for first time user), or "all" if you want to list all device and it's index id
         
 3. Input your first StereoMix index id into the console when asked to
         
