@@ -49,3 +49,15 @@ If the application doesn't display the japanese character correctly please follo
 3. On the Administrative tab, under Language for non-Unicode programs, click "change system locale..."
         
 4. Set the Current system locale as "Japanese(Japan)"
+
+Compiling :
+
+1. Clone this repo
+
+2. Create Python environment and install enverything in "requirements.txt"
+
+3. Install PyInstaller
+
+4. Navigate to root directory and type "pyinstaller --onefile --icon=kanata.ico ./main.py"
+
+5. your .exe file should be in "dist" folder that PyInstaller create
