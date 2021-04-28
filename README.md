@@ -19,3 +19,15 @@ If the application doesn't display the japanese character correctly please follo
 3. On the Administrative tab, under Language for non-Unicode programs, click "change system locale..."
         
 4. Set the Current system locale as "Japanese(Japan)"
+
+วิธีการใช้งาน :
+
+1. ดาวโหลดไฟล์ซิปใน release และรัน "v1.exe" หลังจากแตกไฟล์ออกมา
+
+2. เมื่อเปิดโปรแกรมขึ้นมาจะโดนถามว่า "Do you want to list your SteroMix index id?" ให้ตอบ "yes" ไป
+
+3. ให้ใส่เลขตัวเลขที่โผล่ขึ้นมาใน list ตัวแรกเมื่อโปรแกรมถาม "Your device index id"
+
+4. Audio Channel ส่วนตรงนี้ให้เว้นว่างไปได้เลยเพราะตัว StereoMix จะมีแค่ 2 Channels
+
+5. Time between each translation ให้เว้นว่างไป หรือจะใส่เวลาตามต้องการได้ (แนะนำให้ใส่มากกว่า 10 วิเพราะจะได้ครบประโยค)
