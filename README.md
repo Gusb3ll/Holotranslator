@@ -28,6 +28,8 @@
 
 วิดีโอแสดงการใช้งาน : https://www.youtube.com/watch?v=25mmeiiQOGU
 
+ติดต่อได้ที่ Discord : Gusbell l.#3973
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Usage :
@@ -63,3 +65,5 @@ Compiling :
 4. Navigate to root directory and type "pyinstaller --onefile --icon=kanata.ico ./main.py"
 
 5. your .exe file should be in "dist" folder that PyInstaller create
+
+Contact Discord : Gusbell l.#3973
