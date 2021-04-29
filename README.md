@@ -32,6 +32,8 @@ https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
 
 วิดีโอแสดงการใช้งาน : https://www.youtube.com/watch?v=25mmeiiQOGU
 
+วิธีแก้ StereoMix ใช้ไม่ได้ : https://www.youtube.com/watch?v=MIb1PHfHtUw
+
 วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น : https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
 ติดต่อได้ที่ Discord : Gusbell l.#3973
