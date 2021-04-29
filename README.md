@@ -1,5 +1,7 @@
 **ลิ้งดาวโหลดอยู่ด้านขวาตรง "Releases" ไม่ใช่ปุ่มด้านบน**
 
+>> https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0 <<
+
 วิธีการใช้งาน :
 
 1. ดาวโหลดไฟล์ซิปใน Releases ด้านขวาและรัน "v1.exe" หลังจากแตกไฟล์ออกมา
