@@ -1,5 +1,7 @@
 **ลิ้งดาวโหลดอยู่ด้านขวาตรง "Releases" ไม่ใช่ปุ่มด้านบน**
 
+https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
+
 วิธีการใช้งาน :
 
 1. ดาวโหลดไฟล์ซิปใน Releases ด้านขวาและรัน "v1.exe" หลังจากแตกไฟล์ออกมา
@@ -30,6 +32,8 @@
 
 วิดีโอแสดงการใช้งาน : https://www.youtube.com/watch?v=25mmeiiQOGU
 
+วิธีแก้ StereoMix ใช้ไม่ได้ : https://www.youtube.com/watch?v=MIb1PHfHtUw
+
 วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น : https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
 ติดต่อได้ที่ Discord : Gusbell l.#3973
@@ -46,7 +50,7 @@ Usage :
         
 5. Adjust the time between each translation and you're good to go!
 
-Note : If your "StereoMix" doesn't pick up any sound, try to set the default device to SteroMix and its output to speaker, then plug your headphone jack into it
+Note : If your "StereoMix" doesn't pick up any sound, try to set the default device to SteroMix and its output to your headphone, then plug your headphone jack into it
 
 If the application doesn't display the japanese character correctly please follow these steps :
         
