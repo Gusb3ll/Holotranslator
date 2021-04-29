@@ -46,7 +46,7 @@ Usage :
         
 5. Adjust the time between each translation and you're good to go!
 
-Note : If your "StereoMix" doesn't pick up any sound, try to set the default device to SteroMix and its output to speaker, then plug your headphone jack into it
+Note : If your "StereoMix" doesn't pick up any sound, try to set the default device to SteroMix and its output to your headphone, then plug your headphone jack into it
 
 If the application doesn't display the japanese character correctly please follow these steps :
         
