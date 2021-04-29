@@ -1,8 +1,8 @@
-**ลิ้งดาวโหลดอยู่ด้านขวาตรง "Releases" ไม่ใช่ปุ่มด้านบน**
+**ลิ้งดาวโหลดอยู่ด้านขวาตรง "Releases" ไม่ใช่ปุ่มด้านบน หรือจะโหลดจากลิ้งด้านล่างก็ได้**
 
 https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
 
-วิธีการใช้งาน :
+***วิธีการใช้งาน*** :
 
 1. ดาวโหลดไฟล์ซิปใน Releases ด้านขวาและรัน "v1.exe" หลังจากแตกไฟล์ออกมา
 
@@ -20,7 +20,7 @@ https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
 
 ปล2. อย่าคาดหวังว่าคำที่ได้จะตรงเปะกับคำที่พูดทุกคำเพราะเป็นการตรวจจับเสียงและนำไปแปลอีกทีนึงทำให้มีความแม่นยำที่ต่ำ
 
-วิธีแก้ภาษาญี่ปุ่นไม่ขึ้นในตัวโปรแกรม :
+***วิธีแก้ภาษาญี่ปุ่นไม่ขึ้นในตัวโปรแกรม*** :
 
 1. เปิด "แผนควบคุม"
 
@@ -30,11 +30,11 @@ https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
 
 4. เปลี่ยนเป็น "Japanese" จากนั้นคอมพิวเตอร์จะทำการ restart
 
-วิดีโอแสดงการใช้งาน : https://www.youtube.com/watch?v=25mmeiiQOGU
+****วิดีโอแสดงการใช้งาน**** : https://www.youtube.com/watch?v=25mmeiiQOGU
 
-วิธีแก้ StereoMix ใช้ไม่ได้ : https://www.youtube.com/watch?v=MIb1PHfHtUw
+****วิธีแก้ StereoMix ใช้ไม่ได้**** : https://www.youtube.com/watch?v=MIb1PHfHtUw
 
-วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น : https://www.youtube.com/watch?v=Ll8fbEGuIKU
+****วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น**** : https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
 ติดต่อได้ที่ Discord : Gusbell l.#3973
 
