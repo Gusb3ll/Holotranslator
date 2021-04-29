@@ -1,6 +1,6 @@
 **ลิ้งดาวโหลดอยู่ด้านขวาตรง "Releases" ไม่ใช่ปุ่มด้านบน**
 
->> https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0 <<
+https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
 
 วิธีการใช้งาน :
 
