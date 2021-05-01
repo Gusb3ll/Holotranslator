@@ -11,7 +11,6 @@ def pt():
 
 pt()
 choose = input("Do you want to list your SteroMix index id? (yes, no, all) : ")
-choose_thai = input("Do you want include translation for Thai language? (yes, no) : ")
 pt()
 
 if choose == "yes" or choose == "y":
@@ -31,8 +30,7 @@ elif choose == "all" or choose == "a":
         print("Index " + dev_index + " | Input channels - " + dev_channels + " | " + dev['name'])
     pt()
 
-print(
-    "------------------ Holotranslator v2.0 by Gusbell ------------------")
+print("------------------ Holotranslator v1.0 by Gusbell ------------------")
 pt()
 
 id = input("Your device index id (default : 1) : ")
@@ -107,38 +105,11 @@ def trans():
         except sr.UnknownValueError:
             print("No speech detected")
 
-def trans2():
-    with sr.WavFile("./holo-output.wav") as source:
-        r.adjust_for_ambient_noise(source)
-        audio = r.record(source)
-        try:
-            output = r.recognize_google(audio, language="ja-JP")
-            print(output)
-            translation = translator.translate(output, dest="en")
-            print(f"{translation.text}")
-            translationTH = translator.translate(output, dest="th")
-            print(f"{translationTH.text}")
-        except LookupError:
-            print("Could not understand audio")
-        except sr.UnknownValueError:
-            print("No speech detected")
-
 def run():
     rec()
     sethidden()
     trans()
     os.remove("holo-output.wav")
 
-def run2():
-    rec()
-    sethidden()
-    trans2()
-    os.remove("holo-output.wav")
-
 while True:
-    if choose_thai == "":
-        run()
-    if choose_thai == "no" or choose_thai == "n":
-        run()
-    if choose_thai == "yes" or choose_thai == "y":
-        run2()
+    run()
