@@ -32,7 +32,7 @@ elif choose == "all" or choose == "a":
     pt()
 
 print(
-    "------------------\033[1;36;40m Holotranslator\033[1;37;40m v1.0 by Gusbell ------------------")
+    "------------------ Holotranslator v2.0 by Gusbell ------------------")
 pt()
 
 id = input("Your device index id (default : 1) : ")
