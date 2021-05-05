@@ -30,15 +30,15 @@ https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
 
 4. เปลี่ยนเป็น "Japanese" จากนั้นคอมพิวเตอร์จะทำการ restart
 
-## วิดีโอแสดงการใช้งาน
+## วิดีโอแสดงการใช้งาน (Example use of the program)
 
 https://www.youtube.com/watch?v=25mmeiiQOGU
 
-## วิธีแก้ StereoMix ใช้ไม่ได้
+## วิธีแก้ StereoMix ใช้ไม่ได้ (Fix SteroMix won't work)
 
 https://www.youtube.com/watch?v=MIb1PHfHtUw
 
-## วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น
+## วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น (How to change region to Japanese)
 
 https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
