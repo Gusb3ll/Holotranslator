@@ -38,7 +38,7 @@ https://www.youtube.com/watch?v=25mmeiiQOGU
 
 https://www.youtube.com/watch?v=MIb1PHfHtUw
 
-## วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น (How to change region to Japanese)
+## วิธีย้าย Region ไปเป็นญี่ปุ่นสำหรับคนที่ภาษาญี่ปุ่นไม่ขึ้น (How to change region to Japan)
 
 https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
