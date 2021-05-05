@@ -72,7 +72,7 @@ Compiling :
 
 1. Clone this repo
 
-2. Create Python environment and install enverything in "requirements.txt"
+2. Create Python environment and install enverything in "requirements.txt" (For py audio, install it with included wheel)
 
 3. Install PyInstaller
 
