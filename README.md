@@ -46,7 +46,7 @@ https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Usage :
+# Usage #
         
 1. Download the release and run "v1.exe" and type "yes" into the console to display your StereoMix index id (Recommend for first time user), or "all" if you want to list all device and it's index id
         
@@ -58,7 +58,7 @@ Usage :
 
 Note : If your "StereoMix" doesn't pick up any sound, try to set the default device to SteroMix and its output to your headphone, then plug your headphone jack into it
 
-If the application doesn't display the japanese character correctly please follow these steps :
+# If the application doesn't display the japanese character correctly #
         
 1. Open the Control Panel
         
@@ -68,7 +68,7 @@ If the application doesn't display the japanese character correctly please follo
         
 4. Set the Current system locale as "Japanese(Japan)"
 
-Compiling :
+# Compiling #
 
 1. Clone this repo
 
