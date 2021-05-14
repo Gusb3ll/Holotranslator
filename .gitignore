@@ -1,4 +1,9 @@
 output.wav
 .vscode/settings.json
+build/
+dist/
+__pycache__/
+trans.spec
+web.spec
 en.txt
 jp.txt
