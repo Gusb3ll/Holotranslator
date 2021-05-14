@@ -30,6 +30,7 @@ elif choose == "all" or choose == "a":
 
 print("------------------ Holotranslator v1.0 by Gusbell ------------------")
 pt()
+print("Note : Time between each translation should always be 10 or the webpage might not refresh correctly")
 
 id = input("Your device index id (default : 1) : ")
 channels = input("Your audio channels (default : 2) : ")
@@ -39,9 +40,13 @@ check = os.path.isfile("holotrans-output.wav")
 
 if check == True:
     os.remove("holotrans-output.wav")
-    ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6 )
-else: 
-    ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6 )
+
+with open('settings.txt', 'w', encoding='utf-8') as s:
+    if time == "":
+        time = "10"
+        json.dump(time, s)
+    else:
+        json.dump(time, s)
 
 if id == "":
     id = 1
@@ -86,8 +91,6 @@ def rec():
     wf.writeframes(b''.join(frames))
     wf.close()
 
-def sethidden():
-    ctypes.windll.kernel32.SetFileAttributesW("./holotrans-output.wav", 2)
 
 def trans():
     with open('jp.txt', 'w', encoding='utf-8') as j:
@@ -111,7 +114,6 @@ def trans():
 
 def run():
     rec()
-    sethidden()
     trans()
     os.remove("holotrans-output.wav")
 
