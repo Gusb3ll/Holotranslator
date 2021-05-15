@@ -1,4 +1,4 @@
-**Scroll down for English**
+# **Scroll down for English** #
 
 **ลิ้งดาวโหลดอยู่ด้านขวาตรง "Releases" ไม่ใช่ปุ่มด้านบน หรือจะโหลดจากลิ้งด้านล่างก็ได้**
 
