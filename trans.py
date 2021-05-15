@@ -2,7 +2,6 @@ import os, pyaudio, wave, ctypes, json
 import speech_recognition as sr
 from googletrans import Translator
 
-
 def pt():
     print("")
     print("")
