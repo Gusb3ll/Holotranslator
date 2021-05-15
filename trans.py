@@ -32,7 +32,6 @@ pt()
 print("Note : Time between each translation should always be 10 or the webpage might not refresh correctly")
 pt()
 
-pt()
 id = input("Your device index id (default : 1) : ")
 channels = input("Your audio channels (default : 2) : ")
 time = input("Time between each translation (default : 10s) : ")
