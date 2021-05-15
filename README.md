@@ -2,21 +2,23 @@
 
 **ลิ้งดาวโหลดอยู่ด้านขวาตรง "Releases" ไม่ใช่ปุ่มด้านบน หรือจะโหลดจากลิ้งด้านล่างก็ได้**
 
-https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.0
+https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.1
 
 # วิธีการใช้งาน #
 
-1. ดาวโหลดไฟล์ซิปใน Releases ด้านขวาและรัน "v1.exe" หลังจากแตกไฟล์ออกมา
+1.แตกไฟล์ทั้งหมดให้อยู่ในโฟลเดอร์เดียวกัน
 
-2. เมื่อเปิดโปรแกรมขึ้นมาจะโดนถามว่า "Do you want to list your SteroMix index id?" ให้ตอบ "yes" ไป
+2. ดาวโหลดไฟล์ซิปใน Releases ด้านขวาและรัน "v1.1.exe" หลังจากแตกไฟล์ออกมา
 
-3. ให้ใส่เลขตัวเลขที่โผล่ขึ้นมาใน list ตัวแรกเมื่อโปรแกรมถาม "Your device index id"
+3. เมื่อเปิดโปรแกรมขึ้นมาจะโดนถามว่า "Do you want to list your SteroMix index id?" ให้ตอบ "yes" ไป
 
-4. Audio Channel ส่วนตรงนี้ให้เว้นว่างไปได้เลยเพราะตัว StereoMix จะมีแค่ 2 Channels
+4. ให้ใส่เลขตัวเลขที่โผล่ขึ้นมาใน list ตัวแรกเมื่อโปรแกรมถาม "Your device index id"
 
-5. Time between each translation ให้เว้นว่างไป หรือจะใส่เวลาตามต้องการได้ (แนะนำให้ใส่มากกว่า 10 วิเพราะจะได้ครบประโยค)
+5. Audio Channel ส่วนตรงนี้ให้เว้นว่างไปได้เลยเพราะตัว StereoMix จะมีแค่ 2 Channels
 
-6. เปิดคลิปอะไรก็ได้ที่มีคนพูดภาษาญี่ปุ่น(คลิปเพลงใช้ไม่ได้เพราะว่ามีเสียงรบกวนมากเกินไป)
+6. Time between each translation ให้เว้นว่างไป หรือจะใส่เวลาตามต้องการได้ (แนะนำให้ใส่มากกว่า 10 วิเพราะจะได้ครบประโยค)
+
+7. เปิดคลิปอะไรก็ได้ที่มีคนพูดภาษาญี่ปุ่น(คลิปเพลงใช้ไม่ได้เพราะว่ามีเสียงรบกวนมากเกินไป)
 
 ปล. ตัวโปรแกรมจะแปลเป็นภาษาอังกฤษสำหรับตอนนี้เท่านั้น อัปเดตหน้าจะเพิ่ม Support ภาษาไทยมาให้
 
@@ -50,7 +52,7 @@ https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
 # Usage #
         
-1. Download the release and run "v1.exe" and type "yes" into the console to display your StereoMix index id (Recommend for first time user), or "all" if you want to list all device and it's index id
+1. Download the release and run "v1.1.exe" and type "yes" into the console to display your StereoMix index id (Recommend for first time user), or "all" if you want to list all device and it's index id
         
 3. Input your first StereoMix index id into the console when asked to
         
