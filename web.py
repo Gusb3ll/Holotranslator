@@ -13,7 +13,7 @@ async def index():
                 <html lang="en">
                     <head>
                         <meta charset="UTF-8">
-                        <meta http-equiv="refresh" content="11">
+                        <meta http-equiv="refresh" content="1">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                         <title>{{ title }}</title>
                     </head>
@@ -25,5 +25,5 @@ async def index():
                 ''', title="Holotranslator", japantext=j.read(), englishtext=e.read())
 
 if __name__ == '__main__':
-    ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6 )
-    app.run(debug=True)
+    ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
+    app.run(port=9999)

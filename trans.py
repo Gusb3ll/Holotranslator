@@ -1,4 +1,4 @@
-import os, sys, pyaudio, wave, ctypes, json
+import os, pyaudio, wave, ctypes, json
 import speech_recognition as sr
 from googletrans import Translator
 
@@ -28,25 +28,26 @@ elif choose == "all" or choose == "a":
         print("Index " + dev_index + " | Input channels - " + dev_channels + " | " + dev['name'])
     pt()
 
-print("------------------ Holotranslator v1.0 by Gusbell ------------------")
+print("------------------ Holotranslator v1.1 by Gusbell ------------------")
 pt()
 print("Note : Time between each translation should always be 10 or the webpage might not refresh correctly")
+pt()
 
 id = input("Your device index id (default : 1) : ")
 channels = input("Your audio channels (default : 2) : ")
 time = input("Time between each translation (default : 10s) : ")
 
 check = os.path.isfile("holotrans-output.wav")
+check2 = os.path.isfile("jp.txt")
 
 if check == True:
     os.remove("holotrans-output.wav")
 
-with open('settings.txt', 'w', encoding='utf-8') as s:
-    if time == "":
-        time = "10"
-        json.dump(time, s)
-    else:
-        json.dump(time, s)
+if check2 == False:
+    with open('jp.txt', 'w', encoding='utf-8') as j:
+        with open('en.txt', 'w', encoding='utf-8') as e:
+            json.dump("", j)
+            json.dump("", e)
 
 if id == "":
     id = 1
@@ -91,11 +92,10 @@ def rec():
     wf.writeframes(b''.join(frames))
     wf.close()
 
-
 def trans():
     with open('jp.txt', 'w', encoding='utf-8') as j:
         with open('en.txt', 'w', encoding='utf-8') as e:
-            with sr.WavFile("./holotrans-output.wav") as source:
+            with sr.WavFile("holotrans-output.wav") as source:
                 r = sr.Recognizer()
                 translator = Translator()
                 r.adjust_for_ambient_noise(source)
@@ -111,6 +111,10 @@ def trans():
                     print("Could not understand audio")
                 except sr.UnknownValueError:
                     print("No speech detected")
+
+os.startfile("web.exe")
+os.startfile("startweb.bat")
+ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
 
 def run():
     rec()
