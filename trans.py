@@ -14,11 +14,11 @@ if choose == "yes" or choose == "y":
     p = pyaudio.PyAudio()
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
-        if (dev['name'][:10] == "Stereo Mix"):
+        if (dev['name'][:10] == 'Stereo Mix'):
             dev_index = str(dev['index'])
-            print(dev_index + " - " + "Stereo Mix")
+            print(dev_index + ' - ' + 'Stereo Mix')
     pt()
-elif choose == "all" or choose == "a":
+elif choose == 'all' or choose == 'a':
     p = pyaudio.PyAudio()
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
@@ -36,17 +36,17 @@ id = input("Your device index id (default : 1) : ")
 channels = input("Your audio channels (default : 2) : ")
 time = input("Time between each translation (default : 10s) : ")
 
-check = os.path.isfile("holotrans-output.wav")
-check2 = os.path.isfile("jp.txt")
+check = os.path.isfile('holotrans-output.wav')
+check2 = os.path.isfile('jp.txt') or os.path.isfile('en.txt')
 
 if check == True:
-    os.remove("holotrans-output.wav")
+    os.remove('holotrans-output.wav')
 
 if check2 == False:
     with open('jp.txt', 'w', encoding='utf-8') as j:
         with open('en.txt', 'w', encoding='utf-8') as e:
-            json.dump("", j)
-            json.dump("", e)
+            json.dump('', j)
+            json.dump('', e)
 
 if id == "":
     id = 1
@@ -62,7 +62,7 @@ def rec():
     INDEX = int(id)
     CHUNK = 1024
     RECORD_SECONDS = float(time)
-    WAVE_OUTPUT_FILENAME = "holotrans-output.wav"
+    WAVE_OUTPUT_FILENAME = 'holotrans-output.wav'
 
     p = pyaudio.PyAudio()
     stream = p.open(format=FORMAT,
@@ -94,16 +94,16 @@ def rec():
 def trans():
     with open('jp.txt', 'w', encoding='utf-8') as j:
         with open('en.txt', 'w', encoding='utf-8') as e:
-            with sr.WavFile("holotrans-output.wav") as source:
+            with sr.WavFile('holotrans-output.wav') as source:
                 r = sr.Recognizer()
                 translator = Translator()
                 r.adjust_for_ambient_noise(source)
                 audio = r.record(source)
                 try:
-                    output = r.recognize_google(audio, language="ja-JP")
+                    output = r.recognize_google(audio, language='ja-JP')
                     print(output)
-                    translation = translator.translate(output, dest="en")
-                    print(f"{translation.text}")
+                    translation = translator.translate(output, dest='en')
+                    print(f'{translation.text}')
                     json.dump(output, j, ensure_ascii=False, indent=4)
                     json.dump(translation.text, e, ensure_ascii=False, indent=4)
                 except LookupError:
@@ -111,14 +111,14 @@ def trans():
                 except sr.UnknownValueError:
                     print("No speech detected")
 
-os.startfile("web.exe")
-os.startfile("startweb.bat")
+os.startfile('web.exe')
+os.startfile('startweb.bat')
 ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
 
 def run():
     rec()
     trans()
-    os.remove("holotrans-output.wav")
+    os.remove('holotrans-output.wav')
 
 while True:
     run()
