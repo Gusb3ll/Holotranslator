@@ -4,6 +4,8 @@
 
 https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.1
 
+** โปรดปิด Anti Virus ก่อนใช้งาน **
+ 
 # วิธีการใช้งาน #
 
 1.แตกไฟล์ทั้งหมดให้อยู่ในโฟลเดอร์เดียวกัน
@@ -50,8 +52,10 @@ https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+** Disable Anti Virus before usage **
+
 # Usage #
-        
+
 1. Download the release and run "v1.1.exe" and type "yes" into the console to display your StereoMix index id (Recommend for first time user), or "all" if you want to list all device and it's index id
         
 3. Input your first StereoMix index id into the console when asked to
