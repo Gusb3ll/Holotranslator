@@ -4,7 +4,7 @@
 
 https://github.com/Gusb3ll/Holotranslator/releases/tag/v1.1
 
-** โปรดปิด Anti Virus ก่อนใช้งาน **
+## โปรดปิด Anti Virus ก่อนใช้งาน ##
  
 # วิธีการใช้งาน #
 
@@ -52,7 +52,7 @@ https://www.youtube.com/watch?v=Ll8fbEGuIKU
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-** Disable Anti Virus before usage **
+## Disable Anti Virus before usage ##
 
 # Usage #
 
