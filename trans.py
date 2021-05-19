@@ -41,17 +41,19 @@ check = os.path.isfile('holotrans-output.wav')
 if check == True:
     os.remove('holotrans-output.wav')
 
-with open('jp.txt', 'w', encoding='utf-8') as j:
-    with open('en.txt', 'w', encoding='utf-8') as e:
-        json.dump("", j)
-        json.dump("", e)
-
 if id == "":
     id = 1
 if channels == "":
     channels = 2
 if time == "":
     time = 10
+
+with open('jp.txt', 'w', encoding='utf-8') as j:
+    with open('en.txt', 'w', encoding='utf-8') as e:
+        with open('settings.txt', 'w', encoding='utf-8') as s:
+            json.dump("", j)
+            json.dump("", e)
+            json.dump(float(time), s)
 
 def rec():
     FORMAT = pyaudio.paInt16
