@@ -37,16 +37,14 @@ channels = input("Your audio channels (default : 2) : ")
 time = input("Time between each translation (default : 10s) : ")
 
 check = os.path.isfile('holotrans-output.wav')
-check2 = os.path.isfile('jp.txt') or os.path.isfile('en.txt')
 
 if check == True:
     os.remove('holotrans-output.wav')
 
-if check2 == False:
-    with open('jp.txt', 'w', encoding='utf-8') as j:
-        with open('en.txt', 'w', encoding='utf-8') as e:
-            json.dump('', j)
-            json.dump('', e)
+with open('jp.txt', 'w', encoding='utf-8') as j:
+    with open('en.txt', 'w', encoding='utf-8') as e:
+        json.dump("", j)
+        json.dump("", e)
 
 if id == "":
     id = 1
@@ -107,9 +105,15 @@ def trans():
                     json.dump(output, j, ensure_ascii=False, indent=4)
                     json.dump(translation.text, e, ensure_ascii=False, indent=4)
                 except LookupError:
-                    print("Could not understand audio")
+                    t = "Could not understand audio"
+                    print(t)
+                    json.dump(t, j)
+                    json.dump(t, e)
                 except sr.UnknownValueError:
-                    print("No speech detected")
+                    t = "No speech detected"
+                    print(t)
+                    json.dump(t, j)
+                    json.dump(t, e)
 
 os.startfile('web.exe')
 os.startfile('startweb.bat')
