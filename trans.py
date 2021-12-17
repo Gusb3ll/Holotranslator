@@ -117,9 +117,9 @@ def trans():
                     json.dump(t, j)
                     json.dump(t, e)
 
-os.startfile('web.exe')
-os.startfile('startweb.bat')
-ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
+# os.startfile('web.exe')
+# os.startfile('startweb.bat')
+# ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
 
 def run():
     rec()
